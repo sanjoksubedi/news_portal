@@ -1,5 +1,5 @@
 <?php
-  // Fetching all the Navbar Data
+  // Fetching all the Navbar Data and the
   require('./includes/nav.inc.php');
   
   $cat_id = "";

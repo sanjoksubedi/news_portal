@@ -4,6 +4,7 @@
   require('./includes/nav.inc.php');
 ?>
 
+ 
 
 <!-- Article List Container -->
 <section class="py-1 category-list">
