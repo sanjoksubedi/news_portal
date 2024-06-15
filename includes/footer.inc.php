@@ -4,7 +4,7 @@
     <a href="./index.php"><img src="./assets/images/logo_light.png" /></a>
     <p>
       The collection point of world news. A one stop shop. We bring to you the current happenings around the world from
-      esteemed writers. Make sure to read up and keep up with us through this platform that we bring to you. NewsGrid
+      esteemed writers. Make sure to read up and keep up with us through this platform that we bring to you. GLOBAL NEWS
     </p>
     <div class="socials">
       <a href="#"><i class="fab fa-facebook"></i></a>
@@ -63,16 +63,16 @@
       <h2>Join Us</h2>
       <ul class="box">
         <li>
-          Share the story in your own words with the world. To Inspire with your writing make NewsGrid your platform to
+          Share the story in your own words with the world. To Inspire with your writing make GLOBAL NEWS your platform to
           help bring the stories of the globe to all people.
         </li>
         <a href="./author-login.php" class="my-1 btn btn-secondary">Sign Up</a>
       </ul>
     </li>
   </ul>
-  <div class="footer-bottom">
-    <p>All Rights Reserved by &copy; NewsGrid <?php echo date("Y")?></p>
-  </div>
+  <!-- <div class="footer-bottom">
+    <p>All Rights Reserved by &copy; GLOBAL NEWS <?php echo date("Y")?></p>
+  </div> -->
 </footer>
 
 <!-- JQUERY SCRIPT -->
