@@ -8,10 +8,10 @@
 
 <!-- Article List Container -->
 <section class="py-1 category-list">
-  <div class="container">
-    <h2 class="headings">Articles</h2>
-    <div class="card-container">
-      <?php
+    <div class="container">
+        <h2 class="headings">Articles</h2>
+        <div class="card-container">
+            <?php
 
         // Article Query to fetch maximum 5 random articles
         $articleQuery = " SELECT category.category_name, category.category_color, article.*
@@ -107,17 +107,17 @@
         createMoreCard('./articles.php');
       ?>
 
+        </div>
     </div>
-  </div>
 </section>
 
 
 <!-- Category List Container -->
 <section class="py-1 category-list">
-  <div class="container">
-    <h2 class="headings">Categories</h2>
-    <div class="card-container">
-      <?php
+    <div class="container">
+        <h2 class="headings">Categories</h2>
+        <div class="card-container">
+            <?php
         // Category Query to fetch maximum 5 random category
         $categoryQuery= " SELECT * 
                           FROM category 
@@ -148,8 +148,8 @@
         // Calling user defined function to create a Addmore Card which directs to All Categories Page
         createMoreCard('./categories.php');
       ?>
+        </div>
     </div>
-  </div>
 </section>
 
 
@@ -158,3 +158,7 @@
   // Fetching all the Footer Data
   require('./includes/footer.inc.php');
 ?>
+<!-- JavaScript Files -->
+<script src="assets/js/image-slider.js"></script>
+<script src="assets/js/back-to-top.js"></script>
+<script src="assets/js/navbar-collapse.js"></script>

@@ -113,7 +113,13 @@
 
   <!-- ======== NAVBAR ======== -->
   <nav class="navbar">
-    <div class="logo"><a href="./index.php"><img src="./assets/images/logo.png" /></a></div>
+    <div class="logo"><a href="./index.php"><img src="./assets/images/logo.png" /></a>
+    <!-- adding time zone -->
+    <div class="date-time">
+            <span class="dates"><?php echo date("l, F j Y"); ?>||</span>
+            <span class="clock"><?php date_default_timezone_set("Asia/Kathmandu"); echo date("h:i:sa"); ?></span>
+        </div>
+      </div>
     <label for="btn" class="icon">
       <span class="fa fa-bars"></span>
     </label>
