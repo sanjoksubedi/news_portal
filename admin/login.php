@@ -106,13 +106,13 @@
       </div>
     </div>
   </header> -->
-
+ 
     <section id="main" class="login-main">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <form id="login" method="POST" class="well">
-                    <h1 class="text-center">Admin Login <small></small></h1>
+                      <h1 class="text-center">GLOBAL NEWS <small></small></h1>
                         <div class="form-group">
                             <label>Email Address</label>
                             <input type="email" class="form-control" placeholder="Enter Email" name="login-email" />
@@ -129,7 +129,6 @@
             </div>
         </div>
     </section>
-
 
     <?php
     require('./includes/footer.inc.php')

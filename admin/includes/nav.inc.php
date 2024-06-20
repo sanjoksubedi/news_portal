@@ -4,7 +4,7 @@
   session_start();
 
   if(!isset($_SESSION['ADMIN_LOGGED_IN'])) {
-    alert("Please Login to Enter Admin Panel");
+    // alert("Please Login to Enter Admin Panel");
     redirect('./login.php');
   }
   

@@ -7,7 +7,7 @@
       $ADMIN_ID = $_SESSION['ADMIN_ID'];
     }
     else {
-      alert("Please Login to Enter Admin Panel");
+      // alert("Please Login to Enter Admin Panel");
       redirect('./login.php');
     }
     

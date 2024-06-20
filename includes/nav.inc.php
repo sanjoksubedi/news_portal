@@ -77,63 +77,63 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- PARTIAL CSS INCLUSIONS -->
-  <link rel="stylesheet" href="./assets/css/partials/0-fonts.css" />
-  <link rel="stylesheet" href="./assets/css/partials/1-variables.css" />
-  <link rel="stylesheet" href="./assets/css/partials/2-reset.css" />
-  <link rel="stylesheet" href="./assets/css/partials/3-typography.css" />
-  <link rel="stylesheet" href="./assets/css/partials/4-component.css" />
+    <!-- PARTIAL CSS INCLUSIONS -->
+    <link rel="stylesheet" href="./assets/css/partials/0-fonts.css" />
+    <link rel="stylesheet" href="./assets/css/partials/1-variables.css" />
+    <link rel="stylesheet" href="./assets/css/partials/2-reset.css" />
+    <link rel="stylesheet" href="./assets/css/partials/3-typography.css" />
+    <link rel="stylesheet" href="./assets/css/partials/4-component.css" />
 
-  <!-- CUSTOM CSS INCLUSIONS -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- CUSTOM CSS INCLUSIONS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- RESPONSIVITY CSS INCLUSIONS -->
-  <link rel="stylesheet" href="./assets/css/responsivity/media-queries.css" />
+    <!-- RESPONSIVITY CSS INCLUSIONS -->
+    <link rel="stylesheet" href="./assets/css/responsivity/media-queries.css" />
 
-  <!-- FAVICON LINK -->
-  <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <!-- FAVICON LINK -->
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
 
-  <!-- TITLE OF THE PAGE -->
-  <title>GLOBAL NEWS<?php echo $page_title; ?></title>
+    <!-- TITLE OF THE PAGE -->
+    <title>GLOBAL NEWS<?php echo $page_title; ?></title>
 
-  <!-- FONTAWESOME LINK -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <!-- FONTAWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
 </head>
 
 <body>
 
-  <!-- ======== BACK TO TOP BUTTON ======== -->
-  <button onclick="topFunction()" class="topNavBtn" id="topNavBtn" title="Go to top"><i
-      class="fa fa-arrow-up"></i></button>
+    <!-- ======== BACK TO TOP BUTTON ======== -->
+    <button onclick="topFunction()" class="topNavBtn" id="topNavBtn" title="Go to top"><i
+            class="fa fa-arrow-up"></i></button>
 
 
-  <!-- ======== NAVBAR ======== -->
-  <nav class="navbar">
-    <div class="logo"><a href="./index.php"><img src="./assets/images/logo.png" /></a>
-    <!-- adding time zone -->
-    <div class="date-time">
-            <span class="dates"><?php echo date("l, F j Y"); ?>||</span>
-            <span class="clock"><?php date_default_timezone_set("Asia/Kathmandu"); echo date("h:i:sa"); ?></span>
+    <!-- ======== NAVBAR ======== -->
+    <nav class="navbar">
+        <div class="logo"><a href="./index.php"><img src="./assets/images/logo.png" /></a>
+            <!-- adding time zone -->
+            <div class="date-time">
+                <span class="dates"><?php echo date("l, F j Y"); ?>||</span>
+                <span class="clock"
+                    id="clock"><?php date_default_timezone_set("Asia/Kathmandu"); echo date("h:i:sa"); ?></span>
+            </div>
         </div>
-      </div>
-    <label for="btn" class="icon">
-      <span class="fa fa-bars"></span>
-    </label>
-    <input type="checkbox" id="btn" class="input" />
-    <ul class="ul">
-      <!-- We ECHO class current based upon the boolean variables used in above PHP Snippet -->
-      <li><a href="./index.php" <?php if($home) echo 'class="current"' ?>>Home</a></li>
-      <li>
-        <label for="btn-1" class="show">Categories +</label>
-        <a href="./categories.php" <?php if($category) echo 'class="current"' ?>>Categories</a>
-        <input type="checkbox" id="btn-1" class="input" />
-        <ul>
-          <?php
-
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn" class="input" />
+        <ul class="ul">
+            <!-- We ECHO class current based upon the boolean variables used in above PHP Snippet -->
+            <li><a href="./index.php" <?php if($home) echo 'class="current"' ?>>Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Categories +</label>
+                <a href="./categories.php" <?php if($category) echo 'class="current"' ?>>Categories</a>
+                <input type="checkbox" id="btn-1" class="input" />
+                <ul>
+                    <?php
             // Category Query to fetch random 4 categories
             $categoryQuery= " SELECT  category_id, category_name
                               FROM category 
@@ -155,20 +155,20 @@
                 $category_id = $data['category_id'];
                 $category_name = $data['category_name'];
                 ?>
-          <li><a href="articles.php?id=<?php echo $category_id ?>"><?php echo $category_name ?></a></li>
-          <?php  
+                    <li><a href="articles.php?id=<?php echo $category_id ?>"><?php echo $category_name ?></a></li>
+                    <?php  
               }
             }
           ?>
-          <li><a href="./categories.php">More +</a></li>
-        </ul>
-      </li>
-      <li><a href="./bookmarks.php" <?php if($bookmark) echo 'class="current"' ?>>Bookmarks</a></li>
-      <?php
+                    <li><a href="./categories.php">More +</a></li>
+                </ul>
+            </li>
+            <li><a href="./bookmarks.php" <?php if($bookmark) echo 'class="current"' ?>>Bookmarks</a></li>
+            <?php
         if(isset($_SESSION['USER_NAME'])) {
         }else {
       ?>
-      <li>
+            <!-- <li>
         <label for="btn-2" class="show">Login +</label>
         <a href="./user-login.php" <?php if($login) echo 'class="current"' ?>>Login</a>
         <input type="checkbox" id="btn-2" class="input" />
@@ -176,18 +176,17 @@
           <li><a href="./user-login.php">Reader</a></li>
           <li><a href="./author-login.php">Author</a></li>
         </ul>
-      </li>
-      <?php
+      </li> -->
+            <?php
         }
       ?>
-      <li>
-        <a href="./search.php" <?php if($search) echo 'class="current"' ?>>
-          <span>Search</span>
-          <i id="search-icon" class="fas fa-search"></i>
-        </a>
-      </li>
-      <?php
-
+            <li>
+                <a href="./search.php" <?php if($search) echo 'class="current"' ?>>
+                    <span>Search</span>
+                    <i id="search-icon" class="fas fa-search"></i>
+                </a>
+            </li>
+            <?php
         // If user is logged in
         if(isset($_SESSION['USER_NAME'])) {
           echo '
@@ -210,5 +209,41 @@
           echo '<li><a disabled>Hello '.$_SESSION["USER_NAME"].' !</a></li>';
         }
       ?>
-    </ul>
-  </nav>
+        </ul>
+    </nav>
+
+    <!-- JavaScript to update time dynamically -->
+    <script>
+    function updateTime() {
+        const clock = document.getElementById('clock');
+        const date = new Date();
+
+        // Calculate UTC time in milliseconds
+        const utc = date.getTime() + (date.getTimezoneOffset() * 60000);
+
+        // Create new Date object for Nepal Time (UTC+5:45)
+        const nepalTime = new Date(utc + (5.75 * 3600000));
+
+        let hours = nepalTime.getHours();
+        let minutes = nepalTime.getMinutes();
+        let seconds = nepalTime.getSeconds();
+        let ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+
+        const strTime = hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+        clock.innerHTML = strTime;
+    }
+
+    // Update the time every second
+    setInterval(updateTime, 1000);
+
+    // Update time immediately on page load
+    updateTime();
+  </script>
+
+</body>
+
+</html>
