@@ -66,7 +66,7 @@
           Share the story in your own words with the world. To Inspire with your writing make GLOBAL NEWS your platform to
           help bring the stories of the globe to all people.
         </li>
-        <a href="./author-login.php" class="my-1 btn btn-secondary">Sign Up</a>
+        <!-- <a href="./author-login.php" class="my-1 btn btn-secondary">Sign Up</a> -->
       </ul>
     </li>
   </ul>
