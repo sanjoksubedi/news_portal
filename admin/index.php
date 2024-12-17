@@ -19,7 +19,7 @@
         require('./includes/quick-links.inc.php');
       ?>
       <div class="col-md-9">
-        <!-- Website Overview -->
+        <!-- Website Overview  display -->
         <div class="panel panel-default">
           <div class="panel-heading main-color-bg">
             <h3 class="panel-title">Overview</h3>

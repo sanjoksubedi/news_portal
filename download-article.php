@@ -117,7 +117,7 @@
   $mpdf->showWatermarkText = true;
   
   // Setting Text to use as watermark
-  $mpdf->SetWatermarkText('NewsGrid');
+  $mpdf->SetWatermarkText('GLOBAL NEWS');
 
   // Specifying the font to use for watermark text
   $mpdf->watermark_font = 'DejaVuSans'; 
@@ -135,7 +135,7 @@
   $mpdf->WriteHTML($html);
   
   // Setting PDF file name
-  $file = 'NewsGrid-NA'.$article_id.'-DT'.time().'.pdf';
+  $file = 'GLOBAL NEWS-NA'.$article_id.'-DT'.time().'.pdf';
   
   // Sends file inline to the browser
   $mpdf->output($file,'I');

@@ -4,7 +4,7 @@
   session_start();
 
   if(!isset($_SESSION['ADMIN_LOGGED_IN'])) {
-    alert("Please Login to Enter Admin Panel");
+    // alert("Please Login to Enter Admin Panel");
     redirect('./login.php');
   }
   
@@ -60,7 +60,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NewsGrid Admin Panel | <?php echo $page_title ?></title>
+  <title>GLOBAL NEWS Admin Panel | <?php echo $page_title ?></title>
 
   <link href="../assets/css/partials/4-component.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -80,7 +80,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand">NewsGrid </a>
+        <a class="navbar-brand">GLOBAL NEWS </a>
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">

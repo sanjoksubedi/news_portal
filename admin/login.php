@@ -85,51 +85,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NewsGrid Admin Panel | Login</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GLOBAL NEWS|Admin Login</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
-  <link href="../assets/css/admin/style.css" rel="stylesheet" />
-  <link href="../assets/css/partials/1-variables.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link href="../assets/css/admin/style.css" rel="stylesheet" />
+    <link href="../assets/css/partials/1-variables.css" rel="stylesheet" />
 </head>
 
 <body>
-  <header id="header">
+    <!-- <header id="header">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center">NewsGrid <small>Admin Login</small></h1>
+          <h1 class="text-center">GLOBAL NEWS <small></small></h1>
         </div>
       </div>
     </div>
-  </header>
-
-  <section id="main" class="login-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-          <form id="login" method="POST" class="well">
-            <div class="form-group">
-              <label>Email Address</label>
-              <input type="email" class="form-control" placeholder="Enter Email" name="login-email" />
+  </header> -->
+ 
+    <section id="main" class="login-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <form id="login" method="POST" class="well">
+                      <h1 class="text-center">GLOBAL NEWS <small></small></h1>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter Email" name="login-email" />
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" placeholder="Password" name="login-password" />
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-block" name="login-submit">
+                            Login
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-              <label>Password</label>
-              <input type="password" class="form-control" placeholder="Password" name="login-password" />
-            </div>
-            <button type="submit" class="btn btn-danger btn-block" name="login-submit">
-              Login
-            </button>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-  <?php
+    <?php
     require('./includes/footer.inc.php')
   ?>

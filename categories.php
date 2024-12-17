@@ -54,3 +54,7 @@
   // Fetching all the Footer Data
   require('./includes/footer.inc.php');
 ?>
+<!-- JavaScript Files -->
+<script src="assets/js/image-slider.js"></script>
+<script src="assets/js/back-to-top.js"></script>
+<script src="assets/js/navbar-collapse.js"></script>
